@@ -1,0 +1,22 @@
+chat_server
+기능:포트를 사용자로부터 입력받고 client에서 연결 요청이 들어오면 연결후 클라이언트의 메시지를
+모든 클라이언트에게 write한다
+
+chat_client
+기능:server와 port를 똑같이 입력받고 ip주소와 사용자 이름을 입력하면 서버에 연결 요청을하고
+연결시 서버에게 메시지를 보낼 수 있게 되고 서버에서 보낸 메시지를 출력한다
+
+
+
+mog_last
+기능:오목판 그리고 오목 메커니즘 구현
+
+
+
+mog_server
+기능:mog_last와 mog_server의 기능을 합쳐 첫번째로 들어온 client에게
+black역할 배정 두번째로 들어온 client에겐 white역할 배정 후
+mog_client에서 보낸 값을 이용해 오목판을 그리고 오목 기능 수행
+
+mog_client
+기능:역할 배정후 차례마다 server에 수(手) 좌표 전송
